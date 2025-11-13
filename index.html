@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTech Solutions - Revolutionizing Healthcare Technology</title>
+    <meta name="description" content="Leading healthcare technology solutions that transform patient care and streamline medical operations. Discover our innovative platform today.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="HealthTech Solutions - Revolutionizing Healthcare Technology">
+    <meta property="og:description" content="Leading healthcare technology solutions that transform patient care and streamline medical operations.">
+    <meta property="og:image" content="https://source.unsplash.com/1200x630/medical,technology">
+    <meta property="og:url" content="https://healthtech-solutions.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Vercel Analytics -->
+    <script defer src="https://cdn.vercel-analytics.com/v1/script.js"></script>
+    <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "HealthTech Solutions",
+        "description": "Leading healthcare technology solutions",
+        "url": "https://healthtech-solutions.com",
+        "logo": "https://source.unsplash.com/200x200/medical,logo"
+    }
+    </script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff6b01',
+                        secondary: '#ff0116',
+                        accent: '#ffea01'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #ff6b01 0%, #ff0116 50%, #ffea01 100%);
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        
+        .animate-slide-up {
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .counter {
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="https://source.unsplash.com/40x40/medical,logo" alt="HealthTech Solutions" class="h-10 w-10 rounded-lg">
+                    <span class="ml-3 text-xl font-bold text-gray-900">HealthTech Solutions</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-gray-900 hover:text-primary transition-colors duration-200 font-medium">Home</a>
+                        <a href="#features" class="nav-link text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Features</a>
+                        <a href="#about" class="nav-link text-gray-700 hover:text-primary transition-colors duration-200 font-medium">About</a>
+                        <a href="#pricing" class="nav-link text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Pricing</a>
+                        <a href="#testimonials" class="nav-link text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Testimonials</a>
+                        <a href="#faq" class="nav-link text-gray-700 hover:text-primary transition-colors duration-200 font-medium">FAQ</a>
+                        <a href="#contact" class="nav-link text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block">
+                    <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        Get Started
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-900 font-medium hover:text-primary">Home</a>
+                <a href="#features" class="block px-3 py-2 text-gray-700 font-medium hover:text-primary">Features</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 font-medium hover:text-primary">About</a>
+                <a href="#pricing" class="block px-3 py-2 text-gray-700 font-medium hover:text-primary">Pricing</a>
+                <a href="#testimonials" class="block px-3 py-2 text-gray-700 font-medium hover:text-primary">Testimonials</a>
+                <a href="#faq" class="block px-3 py-2 text-gray-700 font-medium hover:text-primary">FAQ</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 font-medium hover:text-primary">Contact</a>
+                <a href="#contact" class="block mx-3 mt-4 bg-primary text-white px-4 py-2 rounded-lg font-semibold text-center">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 gradient-bg opacity-10"></div>
+        <div class="absolute inset-0">
+            <img src="https://source.unsplash.com/1920x1080/medical,technology,modern" alt="Healthcare Technology" class="w-full h-full object-cover opacity-20">
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-in">
+                    <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        Revolutionizing
+                        <span class="text-primary">Healthcare</span>
+                        Technology
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Transform patient care and streamline medical operations with our cutting-edge healthcare technology platform. Trusted by over 500+ healthcare providers worldwide.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" data-project-link class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-secondary transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center">
+                            Start Free Trial
+                        </a>
+                        <a href="#features" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary hover:text-white transition-all duration-200 text-center">
+                            Learn More
+                        </a>
+                    </div>
+                    
+                    <!-- Trust Indicators -->
+                    <div class="mt-12 pt-8 border-t border-gray-200">
+                        <p class="text-sm text-gray-500 mb-4">Trusted by leading healthcare organizations</p>
+                        <div class="flex items-center space-x-8 opacity-60">
+                            <img src="https://source.unsplash.com/120x40/hospital,logo" alt="Hospital Partner" class="h-8 grayscale hover:grayscale-0 transition-all">
+                            <img src="https://source.unsplash.com/120x40/medical,clinic" alt="Clinic Partner" class="h-8 grayscale hover:grayscale-0 transition-all">
+                            <img src="https://source.unsplash.com/120x40/healthcare,center" alt="Healthcare Center" class="h-8 grayscale hover:grayscale-0 transition-all">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="animate-slide-up">
+                    <div class="relative">
+                        <img src="https://source.unsplash.com/600x500/medical,dashboard,technology" alt="Healthcare Dashboard" class="rounded-2xl shadow-2xl">
+                        <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">99.9% Uptime</p>
+                                    <p class="text-sm text-gray-500">Reliable & Secure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Powerful Features for Modern Healthcare</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our comprehensive platform provides everything you need to deliver exceptional patient care while optimizing operational efficiency.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Electronic Health Records</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive EHR system with intuitive interface, real-time updates, and seamless integration with existing workflows.</p>
+                    <img src="https://source.unsplash.com/400x200/medical,records,digital" alt="EHR System" class="w-full h-32 object-cover rounded-lg">
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">AI-Powered Analytics</h3>
+                    <p class="text-gray-600 mb-4">Advanced machine learning algorithms provide predictive insights, risk assessment, and personalized treatment recommendations.</p>
+                    <img src="https://source.unsplash.com/400x200/analytics,medical,ai" alt="AI Analytics" class="w-full h-32 object-cover rounded-lg">
+                </div>
+                
+                <div class="bg-white
